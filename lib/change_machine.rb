@@ -1,6 +1,6 @@
-class Fixnum
+class String
   define_method(:change_machine) do
-    change = (self)
+    change = (self.to_i)
     coins_array = []
 
     number_of_quarters = (change/25).floor()
